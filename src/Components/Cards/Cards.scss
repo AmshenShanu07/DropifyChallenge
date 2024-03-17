@@ -23,6 +23,10 @@
       transform: translateX(-10px);
       opacity: 0;
       margin-bottom: 15px;
+      
+      h3 {
+        font-size: 24px;
+      }
     }
 
     .card_content {
@@ -54,5 +58,41 @@
         }
       }
     }
+
+    .findme_body {
+      margin-top: 30px;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      // align-items: center;
+
+      .links_con {
+        text-decoration: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        img {
+          width: 35px;
+        }
+
+        p {
+          margin-left: 10px;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width: 800) {
+  .card_head {
+    h3 {
+      font-size: 12px;
+    }
+  }
+  .card_content {
+    font-size: 8px;
   }
 }
